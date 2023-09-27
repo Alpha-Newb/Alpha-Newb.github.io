@@ -155,7 +155,7 @@
 
 			<div class="bg-light border rounded-3" style="height:400px;">
 				<div class="rounded-3 borderBox" id="box" style="height:100%;width:100%;background:blue;">
-					<div id="enemy" style="background-image:url('./img/ow1.png');background-size:100% 100%;"></div>
+					<div id="enemy" style="background-size:100% 100%;"></div>
 					<div id="crosshair"></div>
 				</div>
 			</div>
@@ -254,7 +254,7 @@
 				this.style.display = "none";
 				makeBox();
 			} else if (getTestType() == "predictTest") {
-				var distFromTarget = Math.abs(631 - posLeft);
+				var distFromTarget = Math.abs(leftToCenter - posLeft);
 
 				paused = !paused;
 				if (paused) {
